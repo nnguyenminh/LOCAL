@@ -1,0 +1,126 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href=" {% static 'css/style.css' %} ">
+	<title>Nhat's Django Project 2020</title>
+</head>
+<body>
+	<header id="header">
+	  <div class="logo">
+	    <img id="header-img" src="https://i.pinimg.com/originals/a3/28/c7/a328c7d812ad27d800401c16d3ad0bcd.png" alt="logo">
+	  </div>
+	  <div class="title">
+	    <p>Succulent</p>
+	  </div>
+	  <nav id="nav-bar">
+	    <ul class="nav-link">
+	      <li><a href=" {% static '#home' %} ">Home</a></li>
+	      <li><a href=" {% static '#succulent_care' %} ">Succulent Care</a></li>
+	      <li><a href=" {% static '#product_section' %} ">Products</a></li>
+	      <li><a href=" {% static '#contact' %} ">Contact</a></li>
+	    </ul>
+	  </nav>
+	</header>
+	<section id="home">
+	  <div class="home_text"> 
+	    <h1>Succulent Landing Page</h1>
+	    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corrupti delectus nesciunt earum! Voluptates et rem aut fugiat eos dicta animi voluptatibus suscipit assumenda nesciunt?</p>
+	    <a href=" {% static '' %} " class="home_btn">learn more</a>
+	    <img src="https://i.pinimg.com/originals/98/66/04/986604ccab8a8c9611f0dd6aeb126e45.png" alt="succulent">
+	  </div>
+	</section>
+	<div id="succulent_care"></div>
+	<div class="container">
+	  <section class="succulent_care">
+	    <div class="column">
+	      <div class="icon"><img src="https://i.pinimg.com/originals/07/20/87/072087ce1bffb7890eb18da79dda463b.png" alt="water">
+	      </div>
+	      <div class="detail">
+	        <h3>Feeding</h3>
+	        <p>Lorem ipsum dolor sit amet.</p>
+	      </div>
+	    </div>
+	    <div class="column">
+	      <div class="icon"><img src="https://i.pinimg.com/originals/1d/17/49/1d1749c33e4b124043eb631f2aba2c5b.png" alt="light">
+	      </div>
+	      <div class="detail">
+	        <h3>Light</h3>
+	        <p>Lorem ipsum dolor sit amet.</p>
+	      </div>
+	    </div>
+	    <div class="column">
+	      <div class="icon"><img src="https://i.pinimg.com/originals/c4/8d/f8/c48df8ec28f21e91e7218837f0c4be51.png" alt="grow">
+	      </div>
+	      <div class="detail">
+	        <h3>Where to grow</h3>
+	        <p>Lorem ipsum dolor sit amet.</p>
+	      </div>
+	    </div>
+	  </section>
+	  <section class="video" id="video">
+	    <a class="play_btn" href="https://www.pexels.com/photo/close-view-of-succulent-plants-1575765/" target="_blank"><img src="https://i.pinimg.com/originals/05/fe/4c/05fe4cc76dd7a5fdf18b127d9be2cbfe.png" alt="noun_play"></a>    
+	  </section>
+	  
+	  <section id="product_section">
+	    <div>
+	      <h2>Products</h2>
+	    </div>
+	    <div id="products">
+	    <div class="product" id="succulent1">
+	      <img src="https://i.pinimg.com/originals/35/5e/57/355e576b6ce9bde9af88263c83c683e0.png" alt="">
+	      <div class="plants">Succulent 1</div>
+	      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, molestias?</p>
+	      <h3>105 TL</h3>
+	      <button class="btn">Buy</button>
+	    </div>
+	    <div class="product" id="succulent2">
+	      <img src="https://i.pinimg.com/originals/e9/80/55/e98055ef005dafcb47469cfede3bc72c.png" alt="">
+	      <div class="plants">Succulent 2</div>
+	      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, qui.</p>
+	      <h3>100 TL</h3>
+	      <button class="btn">Buy</button>
+	    </div>
+	    <div class="product" id="succulent3">
+	      <img src="https://i.pinimg.com/originals/e4/e9/20/e4e920457e20ddb41e609f9b2cc4dcc7.png" alt="">
+	      <div class="plants">Succulent 3</div>
+	      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam.</p>
+	      <h3>96 TL</h3>
+	      <button class="btn">Buy</button>
+	    </div>
+	    <div class="product" id="succulent4">
+	      <img src="https://i.pinimg.com/originals/b5/5b/e3/b55be315fc344c79f7025bc0db63bd22.png" alt="">
+	      <div class="plants">Succulent 4</div>
+	      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eveniet?</p>
+	      <h3>87 TL</h3>
+	      <button class="btn">Buy</button>
+	    </div>
+	    </div>
+	  </section>
+	  <div id="contact"></div>
+	  <section id="contact_us">
+	    <div>
+	      <h2>Contact us</h2>
+	    </div>
+	    <div>
+	      <form id="form" class="contact_form" action="https://www.freecodecamp.com/email-submit">
+	        <div class="row">
+	          <input type="text" name="name" id="name" placeholder="Name" required>
+	          <input type="email" name="email" id="email" placeholder="Email address" required></div>
+	        <div><textarea name="message" id="message" placeholder="Your message..."></textarea></div>
+	        <div><button type="submit" id="submit" class="btn">Send</button></div>
+	      </form>
+	    </div>
+	  </section>
+	  <footer>
+	    <ul>
+	      <li><a href="#">Privacy</a></li>
+	      <li><a href="#">Terms</a></li>
+	    </ul>
+	    <span>&copy 2020 Succulent Landing Page</span>
+	  </footer>
+	</div>
+</body>
+</html>
