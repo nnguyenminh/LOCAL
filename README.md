@@ -8,7 +8,7 @@ Have knowledge about Django, Javascript, CSS, Git, Docker
 
 ### Installation
 
-Build an image of our landing page on a Docker machine => run command
+Build an image of our landing page by Dockerfile on a Docker machine => run command
 ```
 docker build -t nmnhat:local .
 ```
@@ -36,7 +36,8 @@ And a public URL will be generated, like http://ip172-18-0-36-c9fok9s33d5g008bbt
 
 ### Authors
 
-* **Nhat Nguyen** - *Software Engineer* - [Github Profile](https://github.com/nnguyenminh)
+* **Nhat Nguyen** - *Owner* - [Github Profile](https://github.com/nnguyenminh)
+* **Minh Nguyen** - *Supporter* - [Github Profile](https://github.com/nvminh0810)
 
 
 ### Acknowledgments
