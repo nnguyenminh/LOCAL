@@ -24,7 +24,7 @@ docker run -dp 8000:8000 nmnhat/local
 
 ### Final result
 
-And a public URL will be opened on port 8000, like http://ip172-18-0-36-c9fok9s33d5g008bbtm0-8000.direct.labs.play-with-docker.com/
+And a public URL will be generated, like http://ip172-18-0-36-c9fok9s33d5g008bbtm0-8000.direct.labs.play-with-docker.com/
 
 
 ### Built With
